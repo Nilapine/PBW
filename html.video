@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INput VIDEO</title>
+      
+    </head>
+    <body>
+        <h2>Multimedia Video - HTML 5</h2>
+    <p>
+        <button onclick="playVid()" type="button">Mulai</button>
+        <button onclick="pauseVid()" type="button">Pause</button>
+        <button onclick="durationVid()" type="button">Durasi Video</button>
+        <button onclick="controlsOn()" type="button">Controls On</button>
+        <button onclick="controlsOff" type="button">Controls Off</button>
+        <button onclick="loopStatus()" type="button">Loop Status</button>
+        <button onclick="loopOn()" type="button">Loop On</button>
+        <button onclick="loopOff()" type="button">Loop Off</button>
+            
+    </p>
+	
+	
+	<h2> VIDEO "SUDAHKAH ANDA BERSYUKUR?" </H2>
+		<video controls autoplay id="myVideo" width="500"
+            <source  src="SudahkahAndaBersyukur.mp4" type="SudahkahAndaBersyukur/mp4">        
+			File not support...
+		</video>
+		
+		
+	<p>
+		<h3>EMBED YOUTUBE</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/kkW1AtwXe-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</p>
+	
+	<p>
+		<h3>SUBTITLE VIDEO</h3>
+			<video controls autoplay id="myVideo" width="450"
+				<source src="SudahkahAndaBersyukur.mp4" type="video/mp4">
+				<track default src="translate.vtt">
+			</video>
+	</p>
+	
+
+    </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+        function durationVid() {
+            alert(vid.duration);
+        }
+        function controlsOn() {
+            vid.controls = true;
+            vid.load ();
+        }
+        function controlsOff() {
+            vid.controls = false;
+            vid.load ();
+        }
+        function loopStatus() {
+            alert(vid.loop);
+        }
+        function loopOn() {
+            vid.loop = true;
+        }
+        function loopOff() {
+            vid.loop = false;
+        }
+        vid.onplay = function() {
+            alert("Video Ini Sedang Di Putar");
+        }
+        vid.onpause = function (){
+            alert("Video Ini Telah Di Pause");
+        }
+        vid.onvolumechange = function (){
+            alert("Volume Video Ini Telah Diubah");
+        }
+    </script>
+</html>
