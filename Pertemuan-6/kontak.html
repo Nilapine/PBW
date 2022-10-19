@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Personal Website</title>
+	</head>
+
+	<body>
+	<header style="background-color:#576F72;padding:6px;text-align:center; color:#F0EBE3 ">
+		  <h1>Nila's Blog</h1>
+	</header>
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		.menu {
+		  float: right;
+		  width: 100%;
+		  text-align: right;
+		  padding: 0 80px;
+		}
+		
+		.menu a {
+		  background-color: grey;
+		  padding: 6px;
+		  margin-top: 0px;
+		  width: 30%;
+		  color: silver;
+		}
+
+		@media only screen and (max-width: 620px) {
+		  /* For mobile phones: */
+		  .menu, .main, .right {
+			width: 0%;
+		  }
+		}
+		</style>
+		  <nav class="menu" style="background-color: silver; padding:8px";>
+			<a href="webpribadi.html">Home</a> 
+			<a href="video.curug.html">Lifestyle</a>
+			<a href="kontak.html">Contact</a>
+			<a href="tentang.html">About me</a>
+		  </nav>
+		<hr />
+		
+		<div>
+			<h1> Kontak Saya <h1>
+				<form>
+					<label for="email">Email </label><br />
+					<input type="email" name="email" placeholder="alamat email"/>
+					<br />
+					<label for="message">Pesan</label> <br />
+					<textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="80"></textarea>
+					<br />
+					<br />
+					<input type="submit" value="Kirim" />
+				</form>
+		</div>
+		
+		<hr>
+		
+		<footer style="background-color:#576F72;text-align:center;padding:10px;margin-top:10px; color:#F0EBE3">© copyright nilaf 2022</footer>
+	
+	</body>
+</html>
