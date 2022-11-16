@@ -1,0 +1,116 @@
+ *{
+	 box-sizing: border-box;
+ }
+ 
+ header {
+	 padding: 30px;
+	 text-align: center;
+	 background-color: rgb(110, 136, 120);
+	 border: 5px solid rgb(144, 161, 139);
+	
+ }
+ header h2{
+	font-family:monospace;
+	color:rgb(173, 185, 101);
+	font-size:x-large;
+ }
+ 
+ nav {
+	 float: left;
+	 width: 20%;
+	 height: max-content;
+
+ }
+   
+ nav ul{
+	 list-style-type: none;
+	 text-align: center;
+	 background-color: rgb(144, 161, 139);
+	 margin:0;
+	 padding:0;
+ }
+ 
+ nav ul li a{
+	 display: block;
+	 color: #000;
+	 padding: 10px 16px;
+	 text-decoration:none;
+	 font-family:monospace;
+	 font-weight: bold;
+ }
+ 
+ nav ul li a:hover {
+	 background-color: rgb(75, 105, 103);
+	 color: #fff;
+	 font-weight: bold;
+ }
+ 
+ article {
+	 display: flex;
+	 flex-direction: column;
+	 width: 80%;
+	 background-color: #2222;
+	 padding: 50px;
+	 margin: 0;
+ }
+ article h4{
+	font-weight: bold;
+	color: olive;
+ }
+ article h1{
+	font-weight: bold;
+	color: olive;
+ }
+ article h3{
+	text-align: center;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: x-large;
+ }
+ footer {
+	 text-align: center;
+	 padding: 10px;
+	 background-color:rgb(75, 105, 103) ;
+ }
+ .satu{
+	font-family: "Times New Roman", Times, serif;
+	color: rgb(51, 134, 76);
+	font-style: italic;
+}
+.tiga{
+	font-family: "Times New Roman", Times, serif;
+	color: rgb(37, 106, 58);
+	font-style: italic;
+	font-weight: bold;
+}
+.miring{
+	font-style: italic;
+}
+
+.gom {
+	padding: 10px;
+	background-color: #fff;
+	width: 45%;
+}
+.kl {
+	padding: 12px;
+	background-color: #fff;
+	width: 50%;
+}
+.lawe {
+	padding: 8px;
+	background-color: #fff;
+	width: 40%;
+}
+.museum {
+	padding: 5px;
+	background-color: #fff;
+	width: 40%;
+}
+.profil{
+	padding: 5px;
+	background-color: #fff;
+	width: 25%;
+}
+
+ 
