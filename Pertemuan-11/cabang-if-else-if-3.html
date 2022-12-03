@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+
+    <title>Grade if/else/if</title> 
+</head> 
+<body> 
+    <script> 
+        var nilai = prompt("Inputkan nilai akhir:"); 
+        var grade = ""; 
+ 
+        if(nilai >= 100) grade = "Sempurna!"
+        else if(nilai >= 90) grade = "Baik sekali" 
+        else if(nilai >= 80) grade = "Baik" 
+        else if(nilai >= 70) grade = "B" 
+        else if(nilai >= 60) grade = "Cukup" 
+        else if(nilai >= 50) grade = "Yuk Belajar lagi" 
+        else if(nilai >= 40) grade = "Belajar dong" 
+        else if(nilai >= 30) grade = "Nilai apa ini????" 
+        else grade = "Niat belajar nggak sehhhhh"; 
+ 
+        document.write(`<p>Grade anda: ${grade}</p>`); 
+    </script> 
+</body> 
+</html>
