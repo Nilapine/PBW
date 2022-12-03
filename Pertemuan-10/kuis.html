@@ -1,50 +1,57 @@
-<!DOCTYPE html>
+<!DOCtype html>
 <html>
-    <head>
-        <title>Hello Java Script</title>
-        <script>
-        function hitung(){
-            //tulis syntax javascript di sini...
-            var form = document.formHitung;
-            var x = eval (form.bil1.value);
-            var y = eval (form.bil2.value);
-            var opr = form.opr.value;
+<head>
+<title>Kalkulator</title>
+</style>
+<script LANGUAGE="JavaScript"> 
+	function plus()
+	{ 	var n1 = document.formhitung.n1.value;
+	    var n2 = document.formhitung.n2.value;
+		var hsl = parseInt(n1)+parseInt(n2);
+		document.formhitung.hasil.value=hsl;
 
-            /*var z = x+y;
-            form.hasil.value = z;
-            var a = x-y;
-            form.hasil.value = a;*/
+	}
+	function kali()
+	{ 	var n1 = document.formhitung.n1.value;
+	    var n2 = document.formhitung.n2.value;
+		var hsl = n1*n2;
+		document.formhitung.hasil.value=hsl;
+	}
+	function bagi()
+	{ 	var n1 = document.formhitung.n1.value;
+	    var n2 = document.formhitung.n2.value;
+		var hsl = n1/n2;
+		document.formhitung.hasil.value=hsl;
+	}
+	function minus()
+	{ 	var n1 = document.formhitung.n1.value;
+	    var n2 = document.formhitung.n2.value;
+		var hsl = n1-n2;
+		document.formhitung.hasil.value=hsl;
+	}
+</script> 
+</head>
+<body>
+<H3>Kalkulator Sederhana</H3>
+<form action="" method="POST" name="formhitung">
+<table border='0'>
+<tr>
+<td>Nilai 1</td><td>: <input type=text name="n1" size="10"></td></tr>
+<tr>
+<td>Nilai 2</td><td>: <input type=text name="n2" size="10" onchange="kali()"></td></tr>
 
-            //var z = eval (x+opr+y);
+<tr>
+<td>Hasil</td><td>: <input type=text name="hasil" size="10"></td></tr>
+<tr>
+<td><input type="button" value="+" OnClick="plus()">
+<input type="button" value="x" OnClick="kali()">
+<input type="button" value="/" OnClick="bagi()">
+<input type="button" value="-" OnClick="minus()"></td>
+<td><input type="reset" value="Reset"></td>
+</tr>
+</table>
+</form>
 
-            if (opr=="+"){
-                var z = x+y;
-            }else if (opr=="-"){
-                var z = x-y;
-            }else if (opr=="*"){
-                var z = x*y;
-            }else if (opr=="/"){
-                var z = x/y;
-            }
-            
-            
-        }
-        </script>
-    </head>
-    <body>
-        <h1>Hello Javascript</h1>
-        <form name="formHitung" action="#">
-            bil 1 <input type="number" name="bil1"><br>
-            opr
-            <select>
-                <option>+</option>
-                <option>-</option>
-                <option>*</option>
-                <option>/</option>
-            </select><br>
-            bil 2 <input type="number" name="bil2">
-            <input type="button" value="=" onclick="hitung()">
-            <input type="number" name="hasil" disabled>
-        </form>
-    </body>
+</body>
+
 </html>
