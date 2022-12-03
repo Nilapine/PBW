@@ -1,0 +1,57 @@
+<!DOCtype html>
+<html>
+<head>
+<title>Kalkulator</title>
+</style>
+<script LANGUAGE="JavaScript"> 
+	function plus()
+	{ 	var n1 = document.formhitung.n1.value;
+	    var n2 = document.formhitung.n2.value;
+		var hsl = parseInt(n1)+parseInt(n2);
+		document.formhitung.hasil.value=hsl;
+
+	}
+	function kali()
+	{ 	var n1 = document.formhitung.n1.value;
+	    var n2 = document.formhitung.n2.value;
+		var hsl = n1*n2;
+		document.formhitung.hasil.value=hsl;
+	}
+	function bagi()
+	{ 	var n1 = document.formhitung.n1.value;
+	    var n2 = document.formhitung.n2.value;
+		var hsl = n1/n2;
+		document.formhitung.hasil.value=hsl;
+	}
+	function minus()
+	{ 	var n1 = document.formhitung.n1.value;
+	    var n2 = document.formhitung.n2.value;
+		var hsl = n1-n2;
+		document.formhitung.hasil.value=hsl;
+	}
+</script> 
+</head>
+<body>
+<H3>Kalkulator Sederhana</H3>
+<form action="" method="POST" name="formhitung">
+<table border='0'>
+<tr>
+<td>Nilai 1</td><td>: <input type=text name="n1" size="10"></td></tr>
+<tr>
+<td>Nilai 2</td><td>: <input type=text name="n2" size="10" onchange="kali()"></td></tr>
+
+<tr>
+<td>Hasil</td><td>: <input type=text name="hasil" size="10"></td></tr>
+<tr>
+<td><input type="button" value="+" OnClick="plus()">
+<input type="button" value="x" OnClick="kali()">
+<input type="button" value="/" OnClick="bagi()">
+<input type="button" value="-" OnClick="minus()"></td>
+<td><input type="reset" value="Reset"></td>
+</tr>
+</table>
+</form>
+
+</body>
+
+</html>
