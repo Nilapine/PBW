@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sematic Element - HTML 5</title>
+        <meta charset="UTF-8">
+        <meta name ="description" content="Free Web tutorials">
+        <meta name ="keywords" content="HTML, CSS, JawaScript">
+        <meta name ="author" content="John Doe">
+        <meta name ="viewport" content="width=device-widht, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            header {
+                padding: 25px;
+                border: 1px solid red;
+            }
+            .row::after {
+                content: "" ;
+                clear: both;
+                display: table;
+            }
+            [class*="col-"] {
+                float: left;
+                padding: 10px;
+            }
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+        </style>
+    </head>
+    <body>
+    <header id = "header">
+        <h2 style="text-align: center">Belajar Woy</h2>
+    </header>
+    <main class="row">
+        <nav class="col-3"; style="text-decoration: none;">
+            <ul>
+                <img src="art.jpeg" style="margin: 0 0px; width: 250px;">
+                <p>Lukisan</p>
+            </ul>
+        </nav>
+        <article class="col-9"style="text-align:justify";>
+            <h4 style="text-align:center";>Lukisan</h4>
+            <p>     Seni merupakan sebuah karya yang bernilai yang dibuat dengan keahlian. 
+                    Seni meliputi banyak kegiatan manusia dalam menciptakan karyanya, 
+                    seperti tari, lukisan, ukiran, gambaran, dan karya seni lainnya.</p>
+                <p>Pada gambar tersebut merupakan contoh karya seni yang berupa lukisan. Lukisan sendiri dibedakan menjadi beberapa macam. Ada yang dari cat air, cat minyak, cat akrilik, ataupun bahan lainnya. Dari perbedaan tersebut juga memiliki hasil yang berbeda di<i>finishing</i>-nya.</p>
+                <p>Lukisan pada gambar merupakan karya yang bernilai dan memiliki arti tersendiri.
+				Bila dicermati, sebenarnya pelukis ingin menyampaikan perasaan hatinya yang sedang hancur.
+				Hal tersebut bisa diketahui karena melihat dari lukisan muka yang kusam dan tercobak-cabik.</p>
+				<p>Biasanya hasil karya-karya yang telah dibuat oleh pelukis akhirnya dijual atau dipamerkan melalui pameran-pameran yang diadakan.
+				Kadang-kadang jika ada pelukis yang baik hati, beliau membagikan hasil lukisannya kepada orang secara cuma-cuma. hal tersebut dilakukan tak lebih hanya untuk membahagiakan pengunjung.</p>
+				<p>Dengan demikian kita bisa paham gimana kondisi para pekerja seni saat ini.</p>
+        </article>
+		<article class="col-10">
+			<p>Bumbu atau bumbu dapur adalah zat yang umumnya berasal dari tanaman beraroma yang ditambahkan pada masakan yang bertujuan untuk menyedapkan makanan. Bumbu memiliki sifat basah, sehingga tidak dapat bertahan atau disimpan lama; lain halnya dengan rempah yang bersifat cenderung kering. Meskipun demikian, istilah bumbu dan rempah sering tumpang tindih dan digunakan secara bergantian dan bersamaan.</p>
+            <p>Sementara itu, bumbu juga dapat dimengerti sebagai ramuan atau percampuran dari beberapa macam tanaman. Hal ini disebut sebagai bumbu dasar dan biasanya juga memasukkan unsur rempah di dalamnya.[2] Bumbu dasar terdiri dari beberapa jenis, yakni bumbu dasar putih, bumbu dasar kuning, dan bumbu dasar merah.</p>
+        </article>
+        <article class="col-2">
+            <img src="Jellyfish.jpg" style="width: 200px; ">
+        </article>
+    </main>
+    <footer style="background-color: hsl(0, 0%, 50%)">
+        copyright <i>&copy;</i> pbw2022
+    </footer>
+</body>
+</html>
