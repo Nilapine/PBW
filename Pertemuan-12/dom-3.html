@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Cerita Javascript</title> 
+</head> 
+ 
+<body> 
+ 
+    <p class="paragraf"><b>CERPEN TSANA</b></p>
+    <p class="paragraf">Sebenarnya, aku sudah terlalu lelah untuk menceritakan hal-hal 
+        yang sudah-sudah. Tapi kadang, manusia yang kenal lelah, kenal pula dengan yang namanya istirahat. Lagipula, aku sudah cukup beristirahat, aku sekarang sudah cukup waktu untuk kembali menceritakan kisah yang lalu itu. Apalagi, beberapa hari yang lalu, aku sedikit keceplosan tentang batas. </p> 
+ 
+    <p class="paragraf">Ah, entah bagaimana memulainya. Karena batas yang sekarang ada itu, sebenarnya…. awalnya tidak ada. Ya, awalnya tidak ada. Bukankah itu bagian paling menyedihkan dari batas? Ketika aku baru tau bahwa hal semacam itu beneran ada di bumi, dan aku harus tau itu dari kamu.</p> 
+ 
+    <p class="paragraf">Tidak apa-apa. Aku akan tetap membahasnya karena kamu pun belum pernah dengar batas di antara kita yang langsung dari ceritaku. Tapi, kamu sepertinya tidak akan mendengar ini karena sejak dulu kamu lebih senang membaca daripada mendengar. Hubungan kita pun waktu itu berakhir dengan begitu jelas lewat sebuah pesan. Kamu tidak mau memilih berbicara dan mendengar semuanya langsung. Jadi, kalau aku tidak malas, aku akan mengunggah tulisan ini di instagram. Dengar kabar kamu sudah punya social media itu sekarang. Dengar-dengar pula kamu sempat like tulisanku yang judulnya “menanti sapa” itu.</p> 
+ 
+ 
+    <script> 
+        var paragraf = document.getElementsByClassName("paragraf"); 
+        setInterval(function () { 
+            paragraf[0].style.color = "red"; 
+            paragraf[1].style.color = "yellow"; 
+            paragraf[2].style.color = "blue";
+            paragraf[3].style.color = "cyan"; 
+     
+            setTimeout(function () { 
+                paragraf[0].style.color = "black"; 
+                paragraf[1].style.color = "black"; 
+                paragraf[2].style.color = "black"; 
+                paragraf[3].style.color = "black"; 
+            }, 500) 
+        }, 1000); 
+    </script> 
+ 
+</body>
+</html>
